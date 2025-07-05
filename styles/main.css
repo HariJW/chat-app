@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +5,10 @@
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -17,5 +16,141 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  height: 100%;
+  width: 100%;
 }
 
+.chat-app-wrapper {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  background: #e9fffe;
+  box-shadow: 0.02rem 0 0.08rem rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  height: 100%;
+  background: #fff;
+}
+
+.review-header {
+  border-bottom: 0.1rem solid #eee;
+  padding-bottom: 1rem;
+}
+
+.review-images img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  margin-right: 0.5rem;
+}
+
+.reply-box {
+  border-top: 0.1rem solid #eee;
+  padding: 1.5rem;
+}
+
+.list-group-item.active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.sidebar-custom {
+  width: 7rem;
+  background: linear-gradient(to bottom, #f0f4ff, #e8fcff);
+  box-shadow: 0.2rem 0 1rem rgba(0, 0, 0, 0.05);
+}
+
+.logo-circle {
+  background-color: #3f84e5;
+  color: #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(63, 132, 229, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo-circle:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-icon {
+  background-color: #ffffff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+  font-size: 1.6rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar-icon:hover {
+  background-color: #3f84e5;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.notification-dot {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #dc3545;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+}
+
+.message-item {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.message-item:hover {
+  background-color: #f1f5ff;
+  transform: scale(1.02);
+}
+
+.message-item.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.message-item.active small,
+.message-item.active .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.card {
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.input-group-text i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.input-group-text:hover {
+  background-color: #f8f9fa;
+}
